@@ -11,3 +11,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 3.5vw;
+    }
+}
