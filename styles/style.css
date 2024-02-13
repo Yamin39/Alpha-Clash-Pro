@@ -12,8 +12,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+.kbd-container .kbd {
+    color: #010313;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.65rem;
+}
+
+@media screen and (max-width: 640px) {
     html {
         font-size: 3.5vw;
+    }
+    .kbd-container .kbd {
+        font-size: 1rem;
     }
 }

@@ -14,20 +14,83 @@
   <body>
     <main class="bg-primary-dark bg-[url(images/background.png)] bg-no-repeat bg-center text-white">
       <!-- home screen ui -->
-      <section class="flex gap-12 flex-col justify-center items-center min-h-screen text-center">
-        <h1 class="font-anton text-8xl md:text-9xl lg:text-[10.625rem]">
-          ALPHABET <br class="lg:hidden" />
-          CLASH <br class="lg:hidden" />
-          PRO
-        </h1>
-        <p class="text-2xl font-medium">
-          Unleash Your Keyboard Kung Fu : <br class="md:hidden" />
-          Press “Enter” to Play
-        </p>
-        <button class="btn font-semibold text-2xl min-h-fit h-fit px-8 py-5">Play Now</button>
+      <section class="hidden">
+        <div class="flex gap-12 flex-col justify-center items-center min-h-screen text-center">
+          <h1 class="font-anton text-8xl md:text-9xl lg:text-[10.625rem]">
+            ALPHABET <br class="lg:hidden" />
+            CLASH <br class="lg:hidden" />
+            PRO
+          </h1>
+          <p class="text-2xl font-medium">
+            Unleash Your Keyboard Kung Fu : <br class="md:hidden" />
+            Press “Enter” to Play
+          </p>
+          <button class="btn font-semibold text-2xl min-h-fit h-fit px-8 py-5">Play Now</button>
+        </div>
       </section>
       <!-- playground ui -->
-      <section></section>
+      <section>
+        <div class="w-[75%] container mx-auto py-24 flex gap-12 flex-col justify-center items-center min-h-screen text-center">
+          <!-- display -->
+          <div class="w-full h-96 bg-[#FFFFFFB3] backdrop-blur-[20px] border-[1.25rem] border-[#010313CC] rounded-2xl">
+            <div class="bg-[#2F2941] w-fit mx-auto px-5 sm:px-7 pb-4 rounded-bl-xl rounded-br-xl relative -top-1">
+              <p class="text-xs sm:text-lg font-medium">Don't watch keyboard while playing...</p>
+            </div>
+            <div class="flex justify-center items-center" style="height: calc(100% - 2.75rem)">
+              <p class="text-primary-dark font-semibold text-9xl">Y</p>
+            </div>
+          </div>
+          <!-- keyboard layout -->
+          <div class="kbd-container w-[75%] container mx-auto">
+            <div class="flex justify-center gap-2 my-2 w-full">
+              <kbd class="kbd btn">q</kbd>
+              <kbd class="kbd btn">w</kbd>
+              <kbd class="kbd btn">e</kbd>
+              <kbd class="kbd btn">r</kbd>
+              <kbd class="kbd btn">t</kbd>
+              <kbd class="kbd btn">y</kbd>
+              <kbd class="kbd btn">u</kbd>
+              <kbd class="kbd btn">i</kbd>
+              <kbd class="kbd btn">o</kbd>
+              <kbd class="kbd btn">p</kbd>
+            </div>
+            <div class="flex justify-center gap-2 my-2 w-full">
+              <kbd class="kbd btn">a</kbd>
+              <kbd class="kbd btn">s</kbd>
+              <kbd class="kbd btn">d</kbd>
+              <kbd class="kbd btn">f</kbd>
+              <kbd class="kbd btn">g</kbd>
+              <kbd class="kbd btn">h</kbd>
+              <kbd class="kbd btn">j</kbd>
+              <kbd class="kbd btn">k</kbd>
+              <kbd class="kbd btn">l</kbd>
+            </div>
+            <div class="flex justify-center gap-2 my-2 w-full">
+              <kbd class="kbd btn">z</kbd>
+              <kbd class="kbd btn">x</kbd>
+              <kbd class="kbd btn">c</kbd>
+              <kbd class="kbd btn">v</kbd>
+              <kbd class="kbd btn">b</kbd>
+              <kbd class="kbd btn">n</kbd>
+              <kbd class="kbd btn">m</kbd>
+              <kbd class="kbd btn">/</kbd>
+            </div>
+          </div>
+          <!-- life and score -->
+          <div class="flex justify-between gap-2 w-full">
+            <div class="flex gap-2 bg-[#894189] bg-[url(images/life-bg.png)] bg-no-repeat bg-left rounded-[30px] px-9 py-4">
+              <p class="text-xl font-inter font-medium">Life</p>
+              <img src="images/life.svg" alt="" />
+              <span class="text-xl font-inter font-medium">1</span>
+            </div>
+            <div class="flex gap-2 bg-[#360490] bg-[url(images/life-bg.png)] bg-no-repeat bg-left rounded-[30px] px-9 py-4">
+              <p class="text-xl font-inter font-medium">Score</p>
+              <img src="images/score.svg" alt="" />
+              <span class="text-xl font-inter font-medium">1</span>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- result ui -->
       <section></section>
     </main>
