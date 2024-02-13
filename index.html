@@ -14,7 +14,7 @@
   <body>
     <main class="bg-primary-dark bg-[url(images/background.png)] bg-no-repeat bg-center text-white">
       <!-- home screen ui -->
-      <section class="hidden">
+      <section class="">
         <div class="flex gap-12 flex-col justify-center items-center min-h-screen text-center">
           <h1 class="font-anton text-8xl md:text-9xl lg:text-[10.625rem]">
             ALPHABET <br class="lg:hidden" />
@@ -29,7 +29,7 @@
         </div>
       </section>
       <!-- playground ui -->
-      <section>
+      <section class="hidden">
         <div class="w-[75%] container mx-auto py-24 flex gap-12 flex-col justify-center items-center min-h-screen text-center">
           <!-- display -->
           <div class="w-full h-96 bg-[#FFFFFFB3] backdrop-blur-[20px] border-[1.25rem] border-[#010313CC] rounded-2xl">
@@ -92,7 +92,23 @@
         </div>
       </section>
       <!-- result ui -->
-      <section></section>
+      <section class="hidden">
+        <div class="min-h-screen flex justify-center items-center">
+          <div
+            class="text-center space-y-4 px-12 py-11 border border-[#FFFFFF33] rounded-2xl"
+            style="
+              background: linear-gradient(136.67deg, rgba(255, 255, 255, 0.56) 0%, rgba(152, 151, 151, 0) 102.037%), url(./images/result-bg.png);
+              background-repeat: no-repeat;
+              background-position: left center;
+              background-size: contain;
+            "
+          >
+            <h1 class="text-6xl font-extrabold mb-4">Score : <span class="font-medium">0</span></h1>
+            <button class="btn font-semibold text-2xl min-h-fit h-fit px-8 py-4">Play Again</button>
+            <p class="text-xl font-medium">Practice will make you Pro</p>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- scripts -->
     <script src="scripts/script.js"></script>
