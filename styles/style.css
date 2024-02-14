@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+*::selection {
+  background-color: silver;
+  color: #010313;
+}
+
 .font-anton {
   font-family: "Anton", sans-serif;
 }
@@ -13,17 +18,17 @@ body {
 }
 
 .kbd-container .kbd {
-    color: #010313;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 1.65rem;
+  color: #010313;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.65rem;
 }
 
 @media screen and (max-width: 640px) {
-    html {
-        font-size: 3.5vw;
-    }
-    .kbd-container .kbd {
-        font-size: 1rem;
-    }
+  html {
+    font-size: 3.5vw;
+  }
+  .kbd-container .kbd {
+    font-size: 1rem;
+  }
 }
