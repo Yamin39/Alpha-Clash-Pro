@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alphabet Clash Pro</title>
+    <title>Alphabet Clash Pro | Typing Game</title>
+    <link rel="shortcut icon" href="./images/favicon.png" />
     <!-- daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- tailwindCss cdn  -->
@@ -30,7 +31,7 @@
       </section>
       <!-- playground ui -->
       <section id="playground" class="hidden">
-        <div class="w-[75%] container mx-auto py-24 flex gap-12 flex-col justify-center items-center min-h-screen text-center">
+        <div class="w-[75%] container mx-auto py-4 flex gap-12 flex-col justify-center items-center min-h-screen text-center">
           <!-- display -->
           <div class="w-full h-96 bg-[#FFFFFFB3] backdrop-blur-[20px] border-[1.25rem] border-[#010313CC] rounded-2xl">
             <div class="bg-[#2F2941] w-fit mx-auto px-5 sm:px-7 pb-4 rounded-bl-xl rounded-br-xl relative -top-1">
@@ -76,23 +77,39 @@
               <kbd id="/" class="kbd btn">/</kbd>
             </div>
           </div>
-          <!-- life and score -->
-          <div class="flex justify-between gap-2 w-full">
+          <!-- life -->
+          <div class="flex justify-between gap-2 w-full -mt-2">
             <div class="flex gap-2 bg-[#894189] bg-[url(images/life-bg.png)] bg-no-repeat bg-left rounded-[30px] px-9 py-4">
               <p class="text-xl font-inter font-medium">Life</p>
-              <img src="images/life.svg" alt="" />
-              <span class="text-xl font-inter font-medium">1</span>
+              <img src="images/life.svg" alt="Life icon" />
+              <span id="life-display" class="text-xl font-inter font-medium">5</span>
             </div>
+            <!-- score -->
             <div class="flex gap-2 bg-[#360490] bg-[url(images/life-bg.png)] bg-no-repeat bg-left rounded-[30px] px-9 py-4">
               <p class="text-xl font-inter font-medium">Score</p>
-              <img src="images/score.svg" alt="" />
-              <span class="text-xl font-inter font-medium">1</span>
+              <img src="images/score.svg" alt="Score icon" />
+              <span id="score-display" class="text-xl font-inter font-medium">0</span>
             </div>
+          </div>
+          <!-- go home or leave game -->
+          <div class="flex justify-evenly sm:w-full gap-2">
+            <button
+              id="go-home"
+              class="btn bg-green-500 hover:bg-green-600 text-white bg-[url(images/life-bg.png)] bg-no-repeat bg-left rounded-[30px] px-9 py-4 border-none -mt-10 text-xl font-inter font-medium h-auto"
+            >
+              Home
+            </button>
+            <button
+              id="leave-btn"
+              class="btn bg-red-500 hover:bg-red-600 text-white bg-[url(images/life-bg.png)] bg-no-repeat bg-left rounded-[30px] px-9 py-4 border-none -mt-10 text-xl font-inter font-medium h-auto"
+            >
+              Leave
+            </button>
           </div>
         </div>
       </section>
       <!-- result ui -->
-      <section class="hidden">
+      <section id="result" class="hidden">
         <div class="min-h-screen flex justify-center items-center">
           <div
             class="text-center space-y-4 px-12 py-11 border border-[#FFFFFF33] rounded-2xl"
@@ -103,8 +120,8 @@
               background-size: contain;
             "
           >
-            <h1 class="text-6xl font-extrabold mb-4">Score : <span class="font-medium">0</span></h1>
-            <button class="btn font-semibold text-2xl min-h-fit h-fit px-8 py-4">Play Again</button>
+            <h1 class="text-6xl font-extrabold mb-4">Score : <span id="result-display" class="font-medium">0</span></h1>
+            <button id="play-again-btn" class="btn font-semibold text-2xl min-h-fit h-fit px-8 py-4">Play Again</button>
             <p class="text-xl font-medium">Practice will make you Pro</p>
           </div>
         </div>
