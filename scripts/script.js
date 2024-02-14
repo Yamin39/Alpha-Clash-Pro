@@ -29,6 +29,8 @@ function homeToPlay() {
 }
 
 // go home section to playground by clicking enter on keyboard
-document.addEventListener("keyup", () => {
-  homeToPlay();
+document.addEventListener("keyup", (event) => {
+  if (event.key === "Enter" && document.getElementById("home-screen").classList.contains("hidden") === false) {
+    homeToPlay();
+  }
 });
