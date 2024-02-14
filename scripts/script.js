@@ -95,6 +95,8 @@ document.getElementById("leave-btn").addEventListener("click", () => {
 });
 
 document.getElementById("go-home").addEventListener("click", () => {
+  document.getElementById("life-display").innerText = "5";
+  document.getElementById("score-display").innerText = "0";
   const expectedInput = document.getElementById("word-display").innerText.toLowerCase();
   removeBgColorById(expectedInput);
   hideElementById("playground");
