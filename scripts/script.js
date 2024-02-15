@@ -86,6 +86,7 @@ document.getElementById("play-again-btn").addEventListener("click", () => {
   document.getElementById("result-display").innerText = "0";
   hideElementById("result");
   showElementById("playground");
+  document.getElementById("life-display").innerText = "5";
   continueGame();
 });
 
